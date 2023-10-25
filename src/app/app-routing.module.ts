@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'pantalla-crear-grupos',
+    loadChildren: () => import('./pantalla-crear-grupos/pantalla-crear-grupos.module').then( m => m.PantallaCrearGruposPageModule)
   }
 ];
 @NgModule({
